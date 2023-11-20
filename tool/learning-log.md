@@ -20,3 +20,25 @@ Project: clicking sprite till dead game
 * Questions you still have
 * What you're going to try next
 -->
+11/20
+splitting the code into multiple files
+```html
+ <html>
+	<head>
+		<title>Kaboom Tips</title>
+	</head>
+	<body>
+		<script src="https://kaboomjs.com/lib/0.5.1/kaboom.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
+```
+This is how u start off a custom component
+```js
+// this is a new file: ./components/big.js
+import k from '../kaboom'
+
+export default function big() {
+	return {}
+}
+```
