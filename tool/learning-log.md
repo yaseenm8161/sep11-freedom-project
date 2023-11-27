@@ -42,3 +42,24 @@ export default function big() {
 	return {}
 }
 ```
+11/27
+this is how you remove or destroy a sprite
+```
+bean.onCollide("fruit", (fruit) => {
+    destroy(fruit)
+})
+```
+this is how you change a sprites color
+```
+add([
+    sprite("bean"),
+    color(0, 0, 255)
+])
+```
+make a circle
+```
+add([
+    pos(80, 120),
+    circle(16),
+])
+```
