@@ -63,3 +63,13 @@ add([
     circle(16),
 ])
 ```
+
+
+
+
+12/4
+``` js
+setGravity(3200)
+```
+This is how u set the gravity of your sprite.
+I tweaked with this by changing the numbers of gravity for example i changed 3200 to like 10000 and the sprites movement got harder and heavier
