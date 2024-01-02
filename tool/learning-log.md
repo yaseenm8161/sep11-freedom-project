@@ -73,3 +73,20 @@ setGravity(3200)
 ```
 This is how u set the gravity of your sprite.
 I tweaked with this by changing the numbers of gravity for example i changed 3200 to like 10000 and the sprites movement got harder and heavier
+
+
+1/2
+``` js
+onKeyDown("up", () => {
+  player.jump(100);
+});
+```
+This code is used for whatever action to occur once the down key is pressed. For example to go down from a step down will take you down and up will take you up
+
+
+``` js
+onCollide("bullet", "platform", (bullet, platform) => {
+  destroy(bullet);
+});
+```
+this code is used for destroying the bullet if it hits a platform. For example if whatever object/im using bullet reaches a certain barrier it is therefor considered dead/destroyed
