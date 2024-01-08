@@ -90,3 +90,9 @@ onCollide("bullet", "platform", (bullet, platform) => {
 });
 ```
 this code is used for destroying the bullet if it hits a platform. For example if whatever object/im using bullet reaches a certain barrier it is therefor considered dead/destroyed
+
+1/8/2024
+```js
+onKeyPress("space", () =>
+```
+0nKeyPress is used to take action for the following key that is pressed and for this line i showed i am using space. once space is pressed it allows the sprite to jump to how high/low the gravity is allowing it to
