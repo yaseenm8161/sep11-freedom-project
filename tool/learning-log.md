@@ -12,7 +12,11 @@ Project: clicking sprite till dead game
 11/7/2023:
 * [i remember like 3 days ago i looked up a tut where the man showed me how to make a flappy bird game using kaboom and here it is](https://www.youtube.com/watch?v=hgReGsh5xVU)
 
-
+2/1
+```js
+debug.log("ouch")
+```
+This piece of code makes it so that once the sprite hits the ground and i will use this so instead of it saying ouch it will say BOOM or KABOOM
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
