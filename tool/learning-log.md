@@ -100,3 +100,7 @@ this code is used for destroying the bullet if it hits a platform. For example i
 onKeyPress("space", () =>
 ```
 0nKeyPress is used to take action for the following key that is pressed and for this line i showed i am using space. once space is pressed it allows the sprite to jump to how high/low the gravity is allowing it to
+
+
+02/5
+
