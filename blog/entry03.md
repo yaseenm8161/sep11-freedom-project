@@ -56,6 +56,6 @@ keyDown("left", () => { ... }) and keyDown("right", () => { ... })
 these establish controls for the player character's left and right movement respectively in Kaboom.js.
 
 ## Engineering Design Process
-i am on the 2nd step of the EDP which is to Conduct research on the problem and its context. I will be using what i learned throught out looking at all the games of kaboom that involve click registering and start buttons and will use that to make my game WAPPA SMASHA
+i am on the 2nd step of the EDP which is to Conduct research on the problem and its context. I will be using what i learned throught out looking at all the games of kaboom that involve click registering and start buttons and will use that to make my game WAPPA SMASHA. I will still be in stage 2 of engineering design process.
 ## Skills i learned
 I learned to research my tool before i use my tool because everything you have memorised might not be enough because there is always more to learn.                                                                                  I also learned that taking your time to study the tool and where code snippets you learned should be used in certain places to better your project/idea
