@@ -8,7 +8,9 @@ Text
 [Home](../README.md)
 
 ## Context
-Building on and on to this blog i have learned more than one thing about the setup of my game called wappa smasha (name idea) like `destroy(whatever it is you want to destroy);)` and most games that exist have to do with something being destroyed and so that gave me the idea to make my game. All the work i have researched on my tool [Kaboom](https://kaboomjs.com/). I will keep researching and trying to get a better layout for my game and i will continue showing you.
+I have been looking back and forth on my plan and it looks great just a little modifications. My plan so far is to make a game that loads the button "start" and once the button is pressed/clicked the game has begun. The next part is for my code is using  loops because i want my game to keep looping over and over again if the user would like to reset the game should reset back to how it started. Now lets say the player completed the game it would tell the player CONGRATULATIONS. Now lets say the player hasent yet completed the game, the game will keep going on and on and on untill the player wins. Now there will be a reset button just incase the player wants to reset then it will. I am making a start and reset button for my game right now.
+
+
 
 ## Kaboom
 
@@ -54,7 +56,6 @@ keyDown("left", () => { ... }) and keyDown("right", () => { ... })
 these establish controls for the player character's left and right movement respectively in Kaboom.js.
 
 ## Engineering Design Process
-Plenty of clicking games dont display the time it took to achieve what you were clicking for and dont display the exact second so therefore i will add a clock that tracks the exact second for example 1:8.4 this means that they finished in 1 minute and 8.4 seconds
-
+i am on the 2nd step of the EDP which is to Conduct research on the problem and its context. I will be using what i learned throught out looking at all the games of kaboom that involve click registering and start buttons and will use that to make my game WAPPA SMASHA
 ## Skills i learned
 I learned to research my tool before i use my tool because everything you have memorised might not be enough because there is always more to learn.                                                                                  I also learned that taking your time to study the tool and where code snippets you learned should be used in certain places to better your project/idea
