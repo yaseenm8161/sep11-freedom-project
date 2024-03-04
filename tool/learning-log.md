@@ -104,3 +104,5 @@ onKeyPress("space", () =>
 
 02/5
 
+02/26
+this line of code is so that it grabs all of the tags that are called with this const variable `const allBombs = get("bomb")` and for example we are using bomb. this can be used to grab the name of the sprites that are bugs in my future game.
