@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Game Title</title>
+    <script type="module" src="https://unpkg.com/kaboom/dist/kaboom.mjs"></script>
+</head>
+<body>
+    <script type="module">
+        import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
+        const k = kaboom({
+            background: [255, 255, 255]
+        });
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <style>
-            /* CSS */
-            
-        </style>
-        
-        <title>Title</title>
-    </head>
-    <body>
-        <!-- HTML -->
-        
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- <script src="script.js"></script> -->
-        <script>
-            // JS
-            
-            
-        </script>
-    </body>
+        loadSprite("bee","img/germ.png");
+
+        function createBee() {
+            let rand_x = Math.random() * (k.width() - 50);
+            let rand_y = Math.random() * (k.height() - 70);
+            add([rect(50, 70), pos(rand_x, rand_y), area(), sprite('bee'), 'bee']);
+        }
+
+        scene("game", (el) => {
+            createBee();
+
+            onClick("bee", (el) => {
+                destroy();
+                createbee();
+            });
+        });
+
+        scene("start", () => {
+           let start_click = add([text("If u wanna play then click"),area(),pos(20,20)]);
+             start_click.onClick(() => {
+                 go("game");
+            });
+        });
+
+       go("start");
+    </script>
+</body>
 </html>
