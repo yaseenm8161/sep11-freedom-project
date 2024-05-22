@@ -1,55 +1,67 @@
+<script type="module">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Game Title</title>
-    <script type="module" src="https://unpkg.com/kaboom/dist/kaboom.mjs"></script>
-</head>
-<body>
-    <script type="module">
-        import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
-        const k = kaboom({
-            background: [255, 255, 255]
-        });
+    // import kaboom.js
+    import kaboom from "https://unpkg.com/kaplay@3001.0.0-alpha.4/dist/kaboom.mjs"
 
-        loadSprite("bee","img/germ.png");
+    // initialize kaboom context
+    kaboom();
+    setBackground(255,255,255);
+    loadSprite("bean","sprites/bean.png");
+    let score = -1;
 
-        function createBee() {
-            let rand_x = Math.random() * (k.width() - 50);
-            let rand_y = Math.random() * (k.height() - 70);
-            add([rect(50, 70), pos(rand_x, rand_y), area(), sprite('bee'), 'bee']);
+    function createEnemy() {
+        let rand_x = rand(width());
+        let rand_y = rand(height());
+        add([
+            sprite('bean'),
+            area(),
+            pos(rand_x, rand_y),
+            "bean",
+        ]);
+    }
+
+
+    scene("game", () => {
+        score++;
+        add([
+            text("Score: " + score, {
+                size: 48,
+                font: "sans-serif",
+            }),
+            color(0),
+            pos(20,20),
+        ])
+
+        createEnemy();
+
+        onClick(() => go("game"))
+
+        if (score == 10){
+            go("win");
         }
+    });
 
-        scene("game", (el) => {
-            createBee();
+    scene("start",() =>{
+        add([
+            text("click to play", {
+                size: 48,
+                font: "sans-serif",
+            }),
+            color(0),
+            pos(20,20),
+        ]);
+        onClick(() => go("game"))
+    });
 
-            onClick("bee", (el) => {
-                destroy();
-                createbee();
-                score_count++;
-                score_text.text="Score: "+score_count;
-                if(score_count==10)
-                go("win");
-            });
-        });
-
-        scene("start", () => {
-           let start_click = add([text("If u wanna play then click"),area(),pos(20,20)]);
-             start_click.onClick(() => {
-                 go("game");
-            });
-        });
-        ================================================================
-        scene("win",()=>{
-            add([text("You Win"),area().pos(k.width()/2,k.height()/2,origin("center")]);
-        });
-
-
-
-
-       go("start");
-    </script>
-</body>
-</html>
+    scene("win",() =>{
+        add([
+            text("You win!!!", {
+                size: 48,
+                font: "sans-serif",
+            }),
+            color(0),
+            pos(20,20),
+        ]);
+    });
+go("start");
+</script>
