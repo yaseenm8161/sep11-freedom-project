@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +28,10 @@
             onClick("bee", (el) => {
                 destroy();
                 createbee();
+                score_count++;
+                score_text.text="Score: "+score_count;
+                if(score_count==10)
+                go("win");
             });
         });
 
@@ -36,6 +41,13 @@
                  go("game");
             });
         });
+        ================================================================
+        scene("win",()=>{
+            add([text("You Win"),area().pos(k.width()/2,k.height()/2,origin("center")]);
+        });
+
+
+
 
        go("start");
     </script>
