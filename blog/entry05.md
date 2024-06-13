@@ -18,11 +18,11 @@ function keyPressed() {
 ```
 
 ## Sources
-Id very much hate to say i didnt use any sources but i used [GOOGLE](https://google.com). for a simple questions which was "how to reset game on click". My only other sources were my peers, ive done nothing but genuinley ask kindly and also ask mr mueller for help. Im surprised the internet bearly helped me out.
+Id very much hate to say i didnt use any sources but i used [GOOGLE](https://google.com). for a simple questions which was "how to reset game on click". My only other sources were my peers, ive done nothing but genuinley ask kindly and also ask mr mueller for help. Im surprised the internet bearly helped me out. Mr mueller helped me get my sprite error to stop and my game to finally load and a couple of peers helped me get my code to run in my preview
 
 
 ## EDP/ Engineering Design Process
-I am finally on the last stage of the EDP which is communicating your results. I am pretty happy with where my project came up to because i underestimated my self heavily and didnt know i was capable of doing what i did. Therefore i will continue being in the last stage of EDP.
+I am finally on the last stage of the EDP which is communicating your results. I am pretty happy with where my project came up to because i underestimated my self heavily and didnt know i was capable of doing what i did. Therefore i will continue being in the last stage of EDP. Its only a matter of time i can see how far i can go and i will use time to my advantage.
 
 ## Skills
 
